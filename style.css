@@ -1,0 +1,11 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  display: 0px;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
