@@ -1,6 +1,4 @@
-import * as THREE from 'three';
-
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import * as THREE from './three.module.js';
 
 const scene = new THREE.Scene();
 
@@ -48,7 +46,6 @@ pog.rotation.x = 45;
 
 scene.add(pog);
 
-const controls = new OrbitControls(camera, renderer.domElement);
 
 function newStar() {
   const gemometry = new THREE.SphereGeometry(0.5, 24, 24);
@@ -76,7 +73,6 @@ scene.add(moon)
 const spaceTexture = new THREE.TextureLoader().load('space.jpg')
 scene.background = spaceTexture;
 
-controls.update()
 
 function animate(time) {
   requestAnimationFrame( animate );
