@@ -69,6 +69,7 @@ const moon = new THREE.Mesh(
 )
 
 scene.add(moon)
+moon.position.x = 10
 
 const spaceTexture = new THREE.TextureLoader().load('space.jpg')
 scene.background = spaceTexture;
